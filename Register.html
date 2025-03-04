@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="Register.css" />
+  </head>
+  <body>
+    <div>
+    <h1>Register</h1>
+    <form
+      action="./RegisterSuccess.html"
+      method="get"
+      onsubmit="return validate()"
+      novalidate
+    >
+      <div class="row">
+        <div>Fullname:</div>
+        <input
+          class="form-control"
+          type="text"
+          id="fullname"
+          placeholder="Enter fullname"
+          required
+        /><br />
+      </div>
+
+      <div class="row">
+        <div>Email:</div>
+        <input
+          class="form-control"
+          type="email"
+          id="email"
+          placeholder="Enter email"
+          required
+        /><br />
+      </div>
+
+      <div class="row">
+        <div>Password:</div>
+        <input
+          class="form-control"
+          type="password"
+          id="password"
+          placeholder="Enter password"
+          required
+        /><br />
+      </div>
+
+      <div class="row">
+        <div>Confirm Password:</div>
+        <input
+          class="form-control"
+          type="password"
+          id="confirmPassword"
+          placeholder="Confirm Password"
+          required
+        /><br />
+      </div>
+
+      <div class="row">
+        <input class="btn btn-primary" type="submit" value="Register" /><br />
+      </div>
+    </form>
+  </div>
+    <script src="Register.js"></script>
+  </body>
+</html>

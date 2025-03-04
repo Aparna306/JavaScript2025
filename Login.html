@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="Login.css" />
+    <script src="login.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1>Login</h1>
+      <form action="./LoginSuccess.html" method="get" onsubmit="return validate()" novalidate>
+        <div>
+          <label for="email">Email</label><br>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Please enter a valid email"
+            required
+          />
+        </div>
+        <div>
+          <label for="password">Password</label><br>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Please enter password"
+            required
+          />
+        </div>
+        <input type="submit" value="Login" />
+      </form>
+    </div>
+  </body>
+</html>

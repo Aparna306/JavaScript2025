@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit User</title>
+</head>
+<body>
+
+    <script>
+        // Get user ID from URL
+        let urlParams = new URLSearchParams(window.location.search);
+        let userId = parseInt(urlParams.get("id"));
+
+        document.write(`<h1>Edit User, ID: ${userId}</h1>`);
+    </script>
+
+    <form onsubmit="saveUser(event)">
+        Fullname: <input type="text" id="fullname"><br><br>
+        Email: <input type="email" id="email"><br><br>
+        <input type="submit" value="Save">
+    </form>
+
+    <script src="EditUser.js"></script>
+
+</body>
+</html>

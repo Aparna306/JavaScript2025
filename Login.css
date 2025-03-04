@@ -1,0 +1,49 @@
+/* Centering the body content */
+body {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  /* Styling the form container */
+  form {
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px;
+    width: 300px; /* You can adjust the width as needed */
+  }
+  
+  /* Styling the input fields */
+  input[type="email"],
+  input[type="password"] {
+    width: 100%; /* Full width of the form */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Styling the submit button */
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  h1 {
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+  }
+  

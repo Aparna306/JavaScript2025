@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <link rel="stylesheet" href="welcome.css" />
+    <script>
+      function redirect(type) {
+        window.location.href = type;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Welcome to the users module</h1><br>
+    <p>Existings Users</p><br>
+    <button onclick="redirect('./Login.html')">Login</button>
+    <p>New Users</p>
+    <button onclick="redirect('./Register.html')">Register</button>
+  </body>
+</html>
